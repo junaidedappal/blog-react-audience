@@ -123,8 +123,9 @@ const Home = ({ setActive, user }) => {
             />
           </div>
           <div className="col-lg-4 ">
-            <SocialFollows/>
             <MostPopular blogs={MBlogs} />
+            <SocialFollows/>
+
           </div>
           
         </div>
