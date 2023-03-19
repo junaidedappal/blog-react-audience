@@ -7,6 +7,7 @@ import {
   query,
   where,
   limit,
+  limitToLast,
 } from "firebase/firestore";
 import React, { useState, useEffect } from "react";
 import BlogSection from "../components/BlogSection";
@@ -45,6 +46,7 @@ const Home = ({ setActive, user }) => {
     MquerySnapshot.forEach((doc) => {
       MBlogs.push({ id: doc.id, ...doc.data() });
     });
+    
     setMBlogs(MBlogs);
   };
   const getLimitBlogs = async () => {
@@ -123,8 +125,11 @@ const Home = ({ setActive, user }) => {
             />
           </div>
           <div className="col-lg-4 ">
-            <MostPopular blogs={MBlogs} />
-            <SocialFollows/>
+          <SocialFollows/>
+            <MostPopular blogs={trendBlogs} />
+            {/* <MostPopular blogs={MBlogs} /> */}
+
+            
 
           </div>
           

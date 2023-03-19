@@ -16,18 +16,19 @@ const categoryOption = [
 ];
 const MostPopular = ({ blogs }) => {
   const navigate = useNavigate();
+  
   return (
     <div className=" bg-white mt-2">
             <div className="blog-heading text-start  py-2 mb-4 ">categories</div>
             <div className="mb-4 border-bottom">
-<ul>
+<ul className="categoryUl">
        {categoryOption?.map((item) => (
     <Link to={`/category/${item}`} style={{ textDecoration: "none" } }>
     <li className="list-cat border-bottom">{item}</li></Link>
 
        ))}
 </ul></div>
-      <div className="blog-heading text-start  py-2 mb-4 ">Related Post</div>
+      <div className="blog-heading text-start  py-2 mb-4 ">Latest Blogs</div>
       {blogs?.map((item) => (
         <div
           className="row pb-3 border-bottom"

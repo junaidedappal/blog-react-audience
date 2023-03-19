@@ -14,7 +14,7 @@ export default function SocialFollow() {
     <div className="bg-white">
     <div className="blog-heading text-start  py-2 mb-4 mt-2 ">Social Channels</div>
     <div className="social-container " style={SocialStyles}>
-      <h4 className="secondary">Connect with Us!!!</h4>
+      <h4 className="secondary headstyle">Connect with Us!!!</h4>
       <a
         href=" "
         className="youtube social"

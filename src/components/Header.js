@@ -24,7 +24,7 @@ const Header = ({ active, setActive, user, handleLogout }) => {
          <div className="container padding-media">
        
           <nav className="navbar navbar-toggleable-md navbar-light">
-          <h2 className=" myblue mt-3">THE AUDIENCE</h2>
+          <h2 className=" myblue mt-3 logoname">THE AUDIENCE</h2>
 
             <button
               className="navbar-toggler mt-3 "
@@ -104,7 +104,7 @@ const Header = ({ active, setActive, user, handleLogout }) => {
                     About
                   </li>
                 </Link>
-                <Link to="/videos" style={{ textDecoration: "none" }}>
+                {/* <Link to="/videos" style={{ textDecoration: "none" }}>
                   <li
                     className={`nav-item nav-link ${
                       active === "videos" ? "active" : ""
@@ -113,7 +113,7 @@ const Header = ({ active, setActive, user, handleLogout }) => {
                   >
                     Videos
                   </li>
-                </Link>
+                </Link> */}
               </ul>
               {userId ? (
                 <>

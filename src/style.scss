@@ -44,38 +44,48 @@
 //colors 
 
 $yellow:#f5bc04;
-$myblue:#0085ad;
+// $myblue:#0085ad;
+$myblue:#900C3F; //catogory background
 $newblue: #0fa8ff;
 
 .white{
 	color: #f1f1f1;
 }
 .myblue{
-	color:#0095a8;
+	color:#FF5733;
 	// color:#0085ad;
 }
 .myblack{
 	color: #444;
 }
 .bg-grey{
-	background-color: rgb(238, 238, 238);
+	background-color: rgb(255, 253, 253);
 }
 .bg-white{
 	background-color: #ffffff;
 }
 .grey-background{
-	background-color:#efffff;
+	background-color:#ffffff;
 }
 .brand{
 	color: $newblue;
 	font-family: 'poppins';
 }
+
+.headstyle{
+color: #988558	;
+font-weight: 500;
+}
 // Header
 .nav-button-style{
 	background-color:white;
-	color: $newblue;
+	color:#C70039 ;
 }
-
+.logoname{
+	color:#C70039;
+	font-weight: 600;
+	font: size 1.5rem;;
+}
 .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active {
 	color: #666!important;
 	padding-top: 12px!important;
@@ -117,6 +127,9 @@ $newblue: #0fa8ff;
 	overflow: visible;
 	color:rgb(76, 74, 72);
 	border-bottom: 1px solid rgb(201, 198, 198);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 5px;
 	&:focus, &:hover {
 		color: white;
@@ -124,7 +137,7 @@ $newblue: #0fa8ff;
 	}
 }
 .bg-faded {
-    background-color: $myblue;
+    background-color: white;
 	margin-top: 0%;
   }
 .bg-greying{
@@ -346,16 +359,22 @@ $newblue: #0fa8ff;
 }
 
 .btn-read {
-    background:#0fa8ff!important;
+    background:#DAF7A6!important;
 	// @include border-radius(0!important);
-	color: white!important;
+	color: #740a0a!important;
 	padding: 5px 5px!important;
 	float: left;
 	margin-top: 10px;
 	font-size: 14px;
 	border-radius: 10px;
 }
-
+.btn-viewmore{
+	background: #581845!important;
+	color: white!important;
+	padding: 5px 5px!important;
+	margin-top: 2rem;
+	
+}
 // Detail
 .single-img{
 	width: 100%;
@@ -466,6 +485,12 @@ $newblue: #0fa8ff;
 
 // Most popular
 
+
+.categoryUl{
+	
+	
+	
+}
 .most-popular-img {
     height: 80px;
 	width: 100%;
@@ -480,12 +505,12 @@ $newblue: #0fa8ff;
 }
 .list-cat{
 	font-size: 1rem;
-	background-color: #0085ad;
+	background-color: #C2B280	;
 	color: white;
 	margin-right: 10px;
-	padding: 2px;
-	border-radius: 2px;
-	
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 4px;
 }
 // Trending
 .trending-img-position {

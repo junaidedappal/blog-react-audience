@@ -13,14 +13,14 @@ const Trending = ({ blogs }) => {
       0: {
         items: 1,
       },
-      400: {
-        items: 1,
-      },
-      600: {
+      999: {
         items: 1,
       },
       1000: {
         items: 2,
+      },
+      1200: {
+        items: 3,
       },
     },
   };
