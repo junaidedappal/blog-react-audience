@@ -65,7 +65,7 @@ const Detail = ({ setActive }) => {
     </div > */}
             <div className="">
 
-            <p className="text-start pt-2 my-black detailHeader">"{blog?.title}"</p>
+            <p className="text-start pt-2 my-black detailHeader">{blog?.title}</p>
             <Link to={`/category/${blog?.category}`}>
               <h6 className="text-start category catg-color">{blog?.category}</h6>
               </Link>
@@ -78,9 +78,9 @@ const Detail = ({ setActive }) => {
              <span className="poppins text-start pt-4">
                 <p className="author"> Author : {blog?.editor}</p>
               </span>
-              <p className="writeup secondary pt-4">" {blog?.writeup} "</p>
+              <p className="writeup secondary pt-4"> {blog?.writeup} </p>
               <p className="text-start secondary pt-2"> {blog?.description}</p>
-              <p className="writeup secondary pt-4">" {blog?.writeuptwo} "</p>
+              <p className="writeup secondary pt-4"> {blog?.writeuptwo} </p>
               <p className="text-start secondary pt-2">{blog?.descriptiontwo}</p>
               
               
