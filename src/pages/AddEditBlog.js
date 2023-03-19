@@ -20,7 +20,11 @@ const initialState = {
   tags: [],
   trending: "no",
   category: "",
+  writeup: "",
   description: "",
+  writeuptwo: "",
+  descriptiontwo: "",
+
 };
 
 const categoryOption = [
@@ -46,7 +50,7 @@ const AddEditBlog = ({ user, setActive }) => {
 
   const navigate = useNavigate();
 
-  const { title, editor, tags, category, trending,  description } = form;
+  const { title, editor, tags, category, trending, writeup , writeuptwo,  description , descriptiontwo } = form;
 
   useEffect(() => {
     const uploadFile = () => {
@@ -120,7 +124,7 @@ const AddEditBlog = ({ user, setActive }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (category && tags && title && editor && description && trending) {
+    if (category && tags && title && editor && writeup && writeuptwo && description && descriptiontwo && trending) {
       if (!id) {
         try {
           await addDoc(collection(db, "blogs"), {
@@ -236,9 +240,37 @@ const AddEditBlog = ({ user, setActive }) => {
               <div className="col-12 py-3">
                 <textarea
                   className="form-control description-box"
-                  placeholder="Description"
+                  placeholder=" && Writeup here"
+                  value={writeup}
+                  name="writeup"
+                  onChange={handleChange}
+                />
+              </div>
+              
+              <div className="col-12 py-3">
+                <textarea
+                  className="form-control description-box"
+                  placeholder="First part of blog"
                   value={description}
                   name="description"
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="col-12 py-3">
+                <textarea
+                  className="form-control description-box"
+                  placeholder=" && next Writeup here"
+                  value={writeuptwo}
+                  name="writeuptwo"
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="col-12 py-3">
+                <textarea
+                  className="form-control description-box"
+                  placeholder="Second part of  blog"
+                  value={descriptiontwo}
+                  name="descriptiontwo"
                   onChange={handleChange}
                 />
               </div>

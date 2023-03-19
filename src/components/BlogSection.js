@@ -62,11 +62,11 @@ const BlogSection = ({ blogs, user, handleDelete }) => {
           
         </div>
       ))}
-      <div> 
+      {/* <div> 
           <Link to={`/`} >
               <button className="btn btn-viewmore  md-2 pd-2">View More</button>
             </Link>
-            </div>
+            </div> */}
     </div>
     </>
   );
